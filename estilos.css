@@ -1,0 +1,84 @@
+/*Seteando margenes y pading para modificarlo nosotros*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Variables basicas*/
+:root {
+    --color-blanco: rgb(209, 209, 209);
+    --color-gris: rgb(128, 128, 128);
+    --color-azul: rgb(59,136,195);
+}
+/*Aca van los estilos*/
+
+/*HEADER*/
+#cajaHeader{
+    background-color: var(--color-azul);
+    height: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo{
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 5rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: aliceblue;
+}
+#barraDeBotones{
+    height: 35%;
+    width: 100%;
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: var(--color-azul);
+    height: 100%;
+    width: 11%;
+    border: 0.1rem solid var(--color-gris);
+    border-radius: 0.5rem;
+    color: aliceblue;
+}
+#cajaEditar{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#btnEditar{
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--color-gris);
+}
+#cajaBusqueda{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#busqueda{
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--color-gris);
+}
+#submit{
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--color-gris);
+    background-color: var(--color-gris);
+}
+
+
+
+
+/*Media query de tamaño celular*/
+@media (max-width: 600px) {
+
+}
