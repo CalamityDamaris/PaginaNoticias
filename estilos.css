@@ -76,6 +76,88 @@
 }
 
 
+/*Main*/
+
+.slider{
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10rem;
+    
+  }
+  
+  .slider ul{
+      display: flex;
+      animation: cambio 20s infinite alternate linear;
+      width: 400%;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+  .slider img{
+      width: 100%;
+      height: 100%;
+  }
+  
+  /*notis*/
+  
+  
+  
+  img{
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .noticias{
+      display: flex;
+      margin: auto;
+  }
+  
+  .noticia{
+      flex-grow: 1;
+      margin: 10px;
+      position: relative;
+      cursor: pointer;
+  }
+
+  .noticia:hover .title{
+      display: block;
+  }
+  
+  .title{
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      padding: 16px;
+      color: white;
+      width: 100%;
+      background-image: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,0));
+      display: none;	
+      margin: 0;
+  }
+
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+
+
+ /*Fin del Main*/
 
 
 /*Media query de tamaño celular*/
