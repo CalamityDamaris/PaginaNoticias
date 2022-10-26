@@ -6,9 +6,12 @@
 }
 /*Variables basicas*/
 :root {
-    --color-blanco: rgb(209, 209, 209);
+    --color-gris-claro: rgb(209, 209, 209);
     --color-gris: rgb(128, 128, 128);
+    --color-blanco: rgb(228, 228, 228);
     --color-azul: rgb(59,136,195);
+    --fuente-1: 'Anton', sans-serif;
+    --fuente-2: 'Oswald';
 }
 /*Aca van los estilos*/
 
@@ -25,7 +28,7 @@
     align-items: center;
     justify-content: start;
     margin-left: 5rem;
-    font-family: 'Anton', sans-serif;
+    font-family: var(--fuente-1);
     font-size: 3rem;
     color: aliceblue;
 }
@@ -75,7 +78,48 @@
     background-color: var(--color-gris);
 }
 
-
+#seccion_fecha{
+    display: flex;
+    height: 4rem;
+    background-color: var(--color-gris-claro);
+    font-family: var(--fuente-2);
+    font-style: normal;
+}
+#clima{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left:2rem;
+}
+#fechaydolar{
+    width: 50%;
+}
+#fecha{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45%;
+    margin-right: 2rem;
+    font-size: x-large;
+}
+#barra{
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    background-color: black;
+    border-radius: 1rem;
+    margin-left: 11rem;
+}
+#cotizacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+}
 
 
 /*Media query de tamaño celular*/
