@@ -80,7 +80,10 @@
     position: absolute;
     right: 8.3rem;
 }
-
+.btn:hover{
+    background-color: var(--color-blanco);
+    color: var(--color-azul);
+}
 
 /*Main*/
 
