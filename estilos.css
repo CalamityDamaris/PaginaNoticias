@@ -6,9 +6,12 @@
 }
 /*Variables basicas*/
 :root {
-    --color-blanco: rgb(209, 209, 209);
+    --color-gris-claro: rgb(209, 209, 209);
     --color-gris: rgb(128, 128, 128);
+    --color-blanco: rgb(228, 228, 228);
     --color-azul: rgb(59,136,195);
+    --fuente-1: 'Anton', sans-serif;
+    --fuente-2: 'Oswald';
 }
 /*Aca van los estilos*/
 
@@ -25,7 +28,7 @@
     align-items: center;
     justify-content: start;
     margin-left: 5rem;
-    font-family: 'Anton', sans-serif;
+    font-family: var(--fuente-1);
     font-size: 3rem;
     color: aliceblue;
 }
@@ -52,8 +55,8 @@
 }
 #btnEditar{
     height: 1.5rem;
-    width: 3rem;
-    border-radius: 0.5rem;
+    width: 5rem;
+    border-radius: 1.2rem;
     border: 0.1rem solid var(--color-gris);
 }
 #cajaBusqueda{
@@ -64,17 +67,23 @@
 }
 #busqueda{
     height: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 1.2rem;
     border: 0.1rem solid var(--color-gris);
+    position: static;
 }
 #submit{
     height: 1.5rem;
     width: 2rem;
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     border: 0.1rem solid var(--color-gris);
     background-color: var(--color-gris);
+    position: absolute;
+    right: 8.3rem;
 }
-
+.btn:hover{
+    background-color: var(--color-blanco);
+    color: var(--color-azul);
+}
 
 /*Main*/
 
@@ -85,7 +94,7 @@
     cursor: pointer;
     margin: auto;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     
   }
   
@@ -158,7 +167,120 @@
 
 
  /*Fin del Main*/
+#seccion_fecha{
+    display: flex;
+    height: 4rem;
+    background-color: var(--color-gris-claro);
+    font-family: var(--fuente-2);
+    font-style: normal;
+}
+#clima{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left:2rem;
+}
+#fechaydolar{
+    width: 50%;
+}
+#fecha{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45%;
+    margin-right: 2rem;
+    font-size: x-large;
+}
+#barra{
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    background-color: black;
+    border-radius: 1rem;
+    margin-left: 11rem;
+}
+#cotizacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
 
+.pagina{
+    width: 100%;
+    background-color: rgb(59,136,195);
+}
+.pagina .lugar1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 25px 0px;
+}
+.pagina .lugar1 .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.pagina .lugar1 .caja figure img{
+    width: 240px;
+}
+.pagina .lugar1 .caja h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pagina .lugar1 .caja p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pagina .lugar1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pagina .lugar1 .red-social a:hover{
+    color: aqua;
+}
+.pagina .lugar2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pagina .lugar2 small{
+    font-size: 16px;
+}
+@media screen and (max-width:800px){
+    .pagina .lugar1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
 
 /*Media query de tamaño celular*/
 @media (max-width: 600px) {
