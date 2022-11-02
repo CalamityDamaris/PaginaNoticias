@@ -89,7 +89,10 @@
     right: 8.3rem;
     cursor: pointer;
 }
-
+.btn:hover{
+    background-color: var(--color-blanco);
+    color: var(--color-azul);
+}
 
 /*Main*/
 
@@ -298,4 +301,5 @@ footer{
 /*Media query de tamaño celular*/
 @media (max-width: 600px) {
 
+    
 }
