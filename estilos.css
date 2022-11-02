@@ -31,6 +31,7 @@
     font-family: var(--fuente-1);
     font-size: 3rem;
     color: aliceblue;
+    cursor: pointer;
 }
 #barraDeBotones{
     height: 35%;
@@ -46,7 +47,13 @@
     border: 0.1rem solid var(--color-gris);
     border-radius: 0.5rem;
     color: aliceblue;
+    cursor: pointer;
 }
+
+.btn:hover, #btnEditar:hover{
+    background-color: var(--color-gris);
+}
+
 #cajaEditar{
     width: 50%;
     display: flex;
@@ -56,6 +63,7 @@
 #btnEditar{
     height: 1.5rem;
     width: 5rem;
+    cursor: pointer;
     border-radius: 1.2rem;
     border: 0.1rem solid var(--color-gris);
 }
@@ -79,6 +87,7 @@
     background-color: var(--color-gris);
     position: absolute;
     right: 8.3rem;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: var(--color-blanco);
@@ -94,7 +103,7 @@
     cursor: pointer;
     margin: auto;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     
   }
   
@@ -113,17 +122,22 @@
   }
   
   /*notis*/
-  
-  
-  
-  img{
+
+  .noticia img{
       max-width: 100%;
       height: auto;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
+  .cajaN{
+    margin-top: 1%;
+    background-color: var(--color-gris-claro);
+}
   .noticias{
       display: flex;
       margin: auto;
+      width: 85%;
+      
   }
   
   .noticia{
@@ -147,6 +161,8 @@
       background-image: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,0));
       display: none;	
       margin: 0;
+      font-family: var(--fuente-2);
+    
   }
 
   @keyframes cambio{
