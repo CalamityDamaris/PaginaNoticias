@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 /*Variables basicas*/
 :root {
@@ -14,37 +16,40 @@
     --fuente-2: 'Oswald';
 }
 /*Aca van los estilos*/
+body{
+    width: fit-content;
+}
 
 /*HEADER*/
 #cajaHeader{
     background-color: var(--color-azul);
-    height: 6rem;
     display: flex;
     flex-wrap: wrap;
 }
 #logo{
+    width: 20%;
     height: 65%;
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin-left: 5rem;
+    justify-content: center;
     font-family: var(--fuente-1);
     font-size: 3rem;
     color: aliceblue;
 }
 #barraDeBotones{
-    height: 35%;
+    background-color: var(--color-azul);
+    height: 2rem;
     width: 100%;
-    align-items: end;
     display: flex;
+    align-items: end;
     justify-content: space-between;
 }
 .btn{
     background-color: var(--color-azul);
     height: 100%;
     width: 11%;
-    border: 0.1rem solid var(--color-gris);
-    border-radius: 0.5rem;
+    border: 0.15rem solid var(--color-gris);
+    border-radius: 0.4rem;
     color: aliceblue;
 }
 #cajaEditar{
@@ -77,8 +82,8 @@
     border-radius: 1.2rem;
     border: 0.1rem solid var(--color-gris);
     background-color: var(--color-gris);
-    position: absolute;
-    right: 8.3rem;
+    /* position: absolute;
+    right: 8.3rem; */
 }
 .btn:hover{
     background-color: var(--color-blanco);
@@ -195,13 +200,9 @@
 }
 #barra{
     height: 5%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 70%;
     background-color: black;
     border-radius: 1rem;
-    margin-left: 11rem;
+    margin-right: 1rem;
 }
 #cotizacion{
     display: flex;
@@ -273,16 +274,134 @@ footer{
 .pagina .lugar2 small{
     font-size: 16px;
 }
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){
     .pagina .lugar1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }
+} */
+label{
+    display: flex;
+    justify-content: end;
+}
+#check{
+    display: none;
+}
+#botonCheck{
+    display: none;
 }
 
-/*Media query de tamaño celular*/
-@media (max-width: 600px) {
 
+/*Media query de tamaño celular*/
+@media only screen and (min-width:0px) and (max-width:480px) {
+    #cajaEditar{
+        display: none;
+    }
+    #cajaBusqueda{
+        display: none;
+    }
+    #cajaHeader{
+        justify-content: center;
+    }
+    .slider{
+        display: none;
+    }
+    #botonCheck{
+        display: block;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        font-size:xx-large;
+        color: var(--color-blanco);
+    }
+    #barraDeBotones{
+        position: absolute;
+        left:-100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        z-index: 1;
+        transition: all 0.4s;
+    }
+    .btn{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ #barraDeBotones{
+        left:0;
+    }
+    #seccion_fecha{
+        font-size: smaller;
+        height: 3rem;
+        width: 100%;
+    }
+    #fechaydolar{
+        width: 65%;
+    }
+    #barra{
+        display: none;
+    }
+    #fecha{
+        font-size: small;
+        margin-right: 3rem;
+    }
+    #clima{
+        width: 35%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    #clima img{
+        display: none;
+    }
+    #cotizacion{
+        font-size: x-small;
+    }
+    footer{
+        width: 100%;
+        height: 5rem;
+        position: absolute;
+        bottom: 0px;
+    }
+    .pagina .lugar1{
+        height: 4rem;
+    }
+    .pagina .lugar1 .caja figure a img{
+        display: none;
+    }
+    .pagina .lugar1 .caja p{
+        display: none;
+    }
+    .pagina .lugar1 .caja h2{
+        display: none;
+    }
+    .red-social{
+        position: absolute;
+        bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .pagina .lugar1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cajaRedes{
+        width: 100%;
+    }
+}
+
+/*Media query de tamaño tablet*/
+@media only screen and (min-width:480px) and (max-width:768px) {
+    body{
+        background-color: blue;
+    }
+    #cajaHeader{
+        flex-wrap: nowrap;
+    }
+    
 }
