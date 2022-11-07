@@ -16,9 +16,6 @@
     --fuente-2: 'Oswald';
 }
 /*Aca van los estilos*/
-body{
-    width: fit-content;
-}
 
 /*HEADER*/
 #cajaHeader{
@@ -125,7 +122,24 @@ body{
       width: 100%;
       height: 100%;
   }
-  
+
+  .cajaSlider{
+    width: 100%;
+    height: 100%;
+  }
+
+  .titleSlider{
+    margin-left: calc(((100vw - 900px)/2));
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    padding: 16px;
+    color: white;
+    width: 900px;
+    background-image: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,0));
+    display: none;	
+    font-family: var(--fuente-2);
+}
   /*notis*/
 
   .noticia img{
@@ -144,18 +158,27 @@ body{
       width: 85%;
       flex-wrap: wrap;
   }
-  
+  ::-webkit-scrollbar {
+    display: none;
+}
   .noticia{
       flex-grow: 1;
       margin: 10px;
       position: relative;
       cursor: pointer;
       flex: 0 0 30%;
+      width: 100%;
   }
 
-  .noticia:hover .title{
+.noticia:hover .title{
       display: block;
   }
+
+
+
+#contenidoSlider li:hover .titleSlider{
+    display: block;
+}
 
   .noticia img{
     width: 100%;
@@ -173,7 +196,6 @@ body{
       display: none;	
       margin: 0;
       font-family: var(--fuente-2);
-    
   }
 
   @keyframes cambio{
@@ -227,6 +249,7 @@ body{
     margin-right: 1rem;
 }
 #cotizacion{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -384,28 +407,21 @@ label{
         font-size: x-small;
     }
     footer{
-        width: 100%;
         height: 5rem;
-        position: absolute;
-        bottom: 0px;
     }
     .pagina .lugar1{
         height: 4rem;
     }
-    .pagina .lugar1 .caja figure a img{
-        display: none;
+    .pagina .lugar1 .caja #logo{
+        margin-left: 1rem;
+        display: block;
+        font-size: medium;
     }
     .pagina .lugar1 .caja p{
         display: none;
     }
     .pagina .lugar1 .caja h2{
         display: none;
-    }
-    .red-social{
-        position: absolute;
-        bottom: 1.5rem;
-        display: flex;
-        justify-content: center;
     }
     .pagina .lugar1{
         display: flex;
@@ -417,16 +433,13 @@ label{
     }
 }
 
-/*Media query de tamaño tablet*/
-@media only screen and (min-width:480px) and (max-width:768px) {
-    body{
-        background-color: blue;
+/*Media query de tamaño celular*/
+@media only screen and (max-width:900px){
+    .slider{
+        display: none;
     }
-    #cajaHeader{
-        flex-wrap: nowrap;
-    }
-    
 }
+
 #mainCrud{
     width: 100%;
     height: 100%;
