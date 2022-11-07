@@ -142,7 +142,7 @@ body{
       display: flex;
       margin: auto;
       width: 85%;
-      
+      flex-wrap: wrap;
   }
   
   .noticia{
@@ -150,15 +150,21 @@ body{
       margin: 10px;
       position: relative;
       cursor: pointer;
+      flex: 0 0 30%;
   }
 
   .noticia:hover .title{
       display: block;
   }
+
+  .noticia img{
+    width: 100%;
+    height: 100%;
+  }
   
   .title{
       position: absolute;
-      bottom: 4px;
+      bottom: 0px;
       left: 0;
       padding: 16px;
       color: white;
