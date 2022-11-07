@@ -117,4 +117,20 @@ $(document).ready(function(){
         let fechaDom = data.responseData.translatedText
         $("#fecha").prepend("<div>"+fechaDom+"</div>")
     })
+
+    fetch("https://newsapi.org/v2/top-headlines?country=ar&pageSize=6&apiKey=56a089a877194de3a7adc913adab5f1c")
+    .then(response=>response.json())
+    .then(data=>{
+        console.log(data.articles[14])
+        data.articles.forEach(element => {
+            $(".noticias").prepend("<div class=noticia><img src="+element.urlToImage+"><h2 class=title>"+element.title+"</h2></div>")
+        });
+    })
+    fetch("https://newsapi.org/v2/top-headlines?country=us&pageSize=6&apiKey=56a089a877194de3a7adc913adab5f1c")
+    .then(response=>response.json())
+    .then(data=>{
+        data.articles.forEach(element => {
+            $(".noticias").append("<div class=noticia><img src="+element.urlToImage+"><h2 class=title>"+element.title+"</h2></div>")
+        });
+    })
 })
