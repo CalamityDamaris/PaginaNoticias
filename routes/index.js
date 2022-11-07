@@ -1,13 +1,11 @@
 var express = require('express');
 var router = express.Router();
+const upload = require('../middleware/multer')
 var mainController = require('../controllers/mainController')
 /* GET home page. */
 router.get('/', mainController.index);
-router.get('/noticia', function(req, res, next) {
-  res.render('noticia', { title: 'Express' });
-});
-router.get('/crud', function(req, res, next) {
-  res.render('crud', { title: 'Express' });
-});
+router.get('/noticia/:titulo',mainController.noticia)
+router.get('/crud', mainController.crud);
 
+router.post('/crearNota', upload.single('imagenCrud'),mainController.crearNota)
 module.exports = router;

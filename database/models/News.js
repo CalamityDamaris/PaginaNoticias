@@ -18,6 +18,9 @@ const news = new mongoose.Schema({
     imagen: {
         type: String,
     },
+    url: {
+        type: String,
+    },
     fecha: { type: Date, default: Date.now }
 },
     {

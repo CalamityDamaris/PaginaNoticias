@@ -59,34 +59,47 @@
             </div>
         </section>
         <main id="mainCrud">
-        <section id="crud">
-            <div id="btnesCrud">
-                <button class="btnCrud">AGREGAR</button>
-                <button class="btnCrud">ACTUALIZAR</button>
-            </div>
-            <div class="seccionCrud">
-                <button class="btnCrud"></button>
-                <button class="btnCrud"></button>
-            </div>
-            <div class="seccionCrud">
-                <button class="btnCrud"></button>
-                <button class="btnCrud"></button>
-            </div>
-            <div class="seccionCrud">
-                <button class="btnCrud"></button>
-                <button class="btnCrud"></button>
-            </div>
-            <div class="seccionCrud">
-                <button class="btnCrud"></button>
-                <button class="btnCrud"></button>
-            </div>
-
-
-
-
-
-        </section>
-    </main>
+            <section id="crud">
+                <div id="formCrud">
+                <div id="btnesCrud">
+                    <button class="btnCrud" id="agregarCrud">AGREGAR</button>
+                    <button class="btnCrud" id="actualizarCrud">ACTUALIZAR</button>
+                </div>
+                <div id="seccionCrud">
+                    <% for (item of nota) { %>
+                    <div class="lineaCrud">
+                        <p> <%=item.titulo%> </p>
+                        <button class="btnCrud editar">EDITAR</button>
+                        <button class="btnCrud eliminar">ELIMINAR</button>
+                    </div>
+                    <% } %>
+                </div>
+                <form id="formCrud" action="/crearNota" enctype="multipart/form-data" method="post">
+                <div class="inputsCrud">
+                    <div id="imagenCrud">
+                        <input type="file" name="imagenCrud">
+                    </div>
+                    <div id="tituloCrud">
+                        <input type="text" placeholder="titulo" name="tituloCrud">
+                    </div>
+                    <div id="subtituloCrud">
+                        <input type="text" placeholder="subtitulo" name="subtituloCrud">
+                    </div>
+                    <div id="cuerpoCrud">
+                        <textarea name="cuerpo"></textarea>
+                    </div>
+                    <div id="btnSubmit">
+                        <input type="submit" value="Guardar">
+                    </div>
+                </div>
+    </form>
+    </div>
+    
+    
+    
+    
+            </section>
+        </main>
 
 
 
