@@ -69,8 +69,10 @@
                     <% for (item of nota) { %>
                     <div class="lineaCrud">
                         <p> <%=item.titulo%> </p>
-                        <button class="btnCrud editar">EDITAR</button>
-                        <button class="btnCrud eliminar">ELIMINAR</button>
+                        <form method="post" action="/noticia/<%= item.url %>/editar?_method=PUT">
+                            <button class="btnCrud editar">EDITAR</button></form>
+                        <form method="post" action="/noticia/<%= item.url %>/eliminar?_method=DELETE">
+                            <button class="btnCrud eliminar">ELIMINAR</button></form>
                     </div>
                     <% } %>
                 </div>

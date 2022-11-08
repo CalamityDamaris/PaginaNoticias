@@ -38,4 +38,12 @@ module.exports = {
     let notaGuardada = await nota.save();
     res.redirect('/noticia/' + urlFinal)
   },
+  eliminarNota: async (req, res) => {
+    await News.findOneAndDelete({url: req.params.titulo }).exec()
+    res.redirect('/crud')
+  },
+  editarNota: async (req, res) => {
+    await News.findOneAndUpdate({url: req.params.titulo}).exec()
+    res.redirect('/crud')
+  }
 };
