@@ -17,7 +17,10 @@ module.exports = {
   },
   noticia: async (req, res) => {
     let nota = await News.findOne({url: req.params.titulo}).exec()
-    res.render("noticia",{nota:nota});
+    let noticias = await News.find();
+    res.render("noticia",{data:[
+      {nota:nota}, {noticias:noticias}
+    ]});
   },
   crud: async (req, res) => {
     let nota = await News.find();
@@ -42,8 +45,4 @@ module.exports = {
     await News.findOneAndDelete({url: req.params.titulo }).exec()
     res.redirect('/crud')
   },
-  editarNota: async (req, res) => {
-    await News.findOneAndUpdate({url: req.params.titulo}).exec()
-    res.redirect('/crud')
-  }
 };

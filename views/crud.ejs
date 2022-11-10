@@ -59,16 +59,13 @@
         <main id="mainCrud">
             <section id="crud">
                 <div id="formCrud">
-                <div id="btnesCrud">
-                    <button class="btnCrud" id="agregarCrud">AGREGAR</button>
-                    <button class="btnCrud" id="actualizarCrud">ACTUALIZAR</button>
-                </div>
+                
+                
+                
                 <div id="seccionCrud">
                     <% for (item of nota) { %>
                     <div class="lineaCrud">
-                        <p> <%=item.titulo%> </p>
-                        <form method="post" action="/noticia/<%= item.url %>/editar?_method=PUT">
-                            <button class="btnCrud editar">EDITAR</button></form>
+                        <p id="tituloCrud"> <%=item.titulo%></p>
                         <form method="post" action="/noticia/<%= item.url %>/eliminar?_method=DELETE">
                             <button class="btnCrud eliminar">ELIMINAR</button></form>
                     </div>

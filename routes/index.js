@@ -10,4 +10,3 @@ router.get('/crud', mainController.crud);
 router.post('/crearNota', upload.single('imagenCrud'),mainController.crearNota)
 module.exports = router;
 router.delete('/noticia/:titulo/eliminar',mainController.eliminarNota)
-router.put('/noticia/:titulo/editar', mainController.editarNota)

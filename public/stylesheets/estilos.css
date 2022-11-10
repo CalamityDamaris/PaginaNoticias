@@ -475,7 +475,7 @@ label{
 }
 .lineaCrud{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     background-color: var(--color-blanco);
     border-bottom: black solid 0.1rem;
     margin-left: 4rem;
@@ -487,4 +487,7 @@ label{
     height: 100%;
     margin-left: 4rem;
     margin-right: 4rem;
+}
+#seccionCrud{
+    margin-top: 4rem;
 }
