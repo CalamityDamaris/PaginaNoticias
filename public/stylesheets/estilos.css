@@ -434,8 +434,14 @@ label{
 }
 
 /*Media query de tamaño celular*/
-@media only screen and (max-width:900px){
+@media only screen and (min-width:481px) and (max-width:900px){
     .slider{
+        display: none;
+    }
+    #cotizacion{
+        display: none;
+    }
+    #submit{
         display: none;
     }
 }
