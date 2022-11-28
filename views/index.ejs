@@ -18,78 +18,25 @@
     <script src="javascripts/script.js"></script>
     <script src="https://kit.fontawesome.com/849b19933d.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/12dc9a86f4.js" crossorigin="anonymous"></script>
+    <script src="javascripts/header.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/footer.js"></script>
 </head>
 <body>
     <header>
-        <div id="cajaHeader">
-            <a id="logo"href="../">T3NEWS</a>
-            <div id="cajaEditar">
-                <button id="btnEditar"><a href="../crud">Editar</a></button>
-            </div>
-            <div id="cajaBusqueda">
-                <label for="">
-                    <input type="text" placeholder="  Buscar" id="busqueda">
-                    <button id="submit">🔎</button>
-                </label>
-            </div>
-        </div>
+        <caja-header></caja-header>
         <input type="checkbox" name="" id="check">
-        <label for="check" id="botonCheck">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <div id="barraDeBotones">
-            <button class="btn" id="economia">ECONOMÍA</button>
-            <button class="btn" id="politica">POLÍTICA</button>
-            <button class="btn" id="farandula">FARÁNDULA</button>
-            <button class="btn" id="finanzas">FINANZAS</button>
-            <button class="btn" id="clasificados">CLASIFICADOS</button>
-            <button class="btn" id="deportes">DEPORTES</button>
-            <button class="btn" id="internacional">INTERNACIONAL</button>
-            <button class="btn" id="columnistas">COLUMNISTAS</button>
-            <button class="btn" id="ciencia">CIENCIA</button>
-        </div>
-        <section id="seccion_fecha">
-            <div id="clima"></div>
-            <div id="fechaydolar">
-                <div id="fecha"></div>
-                <div id="barra"></div>
-                <div id="cotizacion"></div>
-            </div>
-        </section>
+        <checkbox-caja></checkbox-caja>
+        <barra-de-botones id="barraDeBotones"></barra-de-botones>
+        <seccion-fecha></seccion-fecha>
     </header>
     <main>
-        <div class="slider">
-            <ul id="contenidoSlider"></ul>
-        </div>
-
-
-
-        <div class="noticias"></div>
+        <slider-main></slider-main>
+        <noticias-main></noticias-main>
     </main>
     <footer class="pagina">
-            <div class="lugar1">
-                <div class="caja">
-                    <a href="#" id="logo">T3NEWS</a>
-                </div>
-                <div class="caja">
-                    <h2>Sobre nosotros</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, quae.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, quae.</p>
-                </div>
-                <div class="caja" id="cajaRedes">
-                    <h2>Siguenos</h2>
-                    <div class="red-social">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-youtube"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="lugar2">
-                <small>&copy; 2022 <b>T3News</b> - Todos los Derechos Reservados.</small>
-            </div>
+            <bloque-1></bloque-1>
+            <bloque-2></bloque-2>
     </footer>
-
 </body>
 </html>
