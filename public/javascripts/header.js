@@ -43,10 +43,10 @@ class cajaHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
                         <div id="cajaHeader">
-                            <a id="logo"href="../">T3NEWS</a>
+                            <a id="logo"href="../../">T3NEWS</a>
                             <div id="cajaEditar">
                                 <button id="btnEditar">
-                                    <a href="../crud">Tus noticias</a>
+                                    <a href="../../crud">Tus noticias</a>
                                 </button>
                             </div>
                             <div id="cajaBusqueda">
