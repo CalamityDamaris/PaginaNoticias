@@ -693,4 +693,7 @@ seccion-fecha{
     .inputsCrud{
         flex-direction: column;
     }
+    .titleSlider{
+        display: none;
+    }
 }
