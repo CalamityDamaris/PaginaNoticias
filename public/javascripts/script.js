@@ -122,14 +122,14 @@ $(document).ready(function(){
     .then(response=>response.json())
     .then(data=>{
         data.articles.forEach(element => {
-            $(".noticias").prepend("<div class=noticia><img src="+element.urlToImage+"><h2 class=title>"+element.title+"</h2></div>")
+            $(".noticias").prepend("<div class=noticia><a href="+element.url+"><img src="+element.urlToImage+"><h2 class=title>"+element.title+"</h2></a></div>")
         });
     })
     fetch("https://newsapi.org/v2/top-headlines?country=us&pageSize=6&apiKey=e79dbe940d2042c99b4538b7742f0e71")
     .then(response=>response.json())
     .then(data=>{
         data.articles.forEach(element => {
-            $(".noticias").append("<div class=noticia><img src="+element.urlToImage+"><h2 class=title>"+element.title+"</h2></div>")
+            $(".noticias").append("<div class=noticia><a href="+element.url+"><img src="+element.urlToImage+"><h2 class=title>"+element.title+"</h2></a></div>")
         });
     })
     fetch("https://newsapi.org/v2/top-headlines?country=ar&pageSize=6&apiKey=e79dbe940d2042c99b4538b7742f0e71")
@@ -138,7 +138,7 @@ $(document).ready(function(){
         let arrayNoticias = [data.articles[0],data.articles[1],data.articles[2],data.articles[3]]
         arrayNoticias.forEach(element => {
             
-            $("#contenidoSlider").append("<li><div class=cajaSlider><img src="+element.urlToImage+"><h2 class=titleSlider>"+element.title+"</h2></div></li>")
+            $("#contenidoSlider").append("<li><div class=cajaSlider><a href="+element.url+"><img src="+element.urlToImage+"><h2 class=titleSlider>"+element.title+"</h2></a></div></li>")
         });
     })
 

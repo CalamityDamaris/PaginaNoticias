@@ -46,7 +46,7 @@ class cajaHeader extends HTMLElement {
                             <a id="logo"href="../">T3NEWS</a>
                             <div id="cajaEditar">
                                 <button id="btnEditar">
-                                    <a href="../crud">Editar</a>
+                                    <a href="../crud">Tus noticias</a>
                                 </button>
                             </div>
                             <div id="cajaBusqueda">

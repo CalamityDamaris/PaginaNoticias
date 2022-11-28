@@ -16,7 +16,85 @@
     --fuente-2: 'Oswald';
 }
 /*Aca van los estilos*/
-
+/*noticia en detalle*/
+#noticiaDetalle{
+    margin:2rem 1rem 2rem 1rem;
+    background-color: var(--color-gris-claro);
+}
+#topNoticia{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+#titulares{
+    max-width: 50%;
+    padding: 1rem;
+}
+#titulares h1{
+    font-family: var(--fuente-2);
+    font-size: 5vw;
+}
+#imagenNoticia{
+    width: 50%;
+    padding: 1rem;
+}
+#imagenNoticia img{
+    
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#titulares p{
+    font-family: var(--fuente-2);
+    font-size: 3vw;
+}
+#cuerpoNoticia{
+    display: flex;
+    justify-content: center;
+    word-break: break-all;
+    white-space: normal;
+    padding: 2rem;
+    font-size: 2vw;
+    font-family: var(--fuente-2);
+}
+#otrasNoticias{
+    background-color: var(--color-gris-claro);
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cajaOtrasNoticias{
+    max-width: 20vw;
+    max-height: 20vh;
+    margin:0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajaOtrasNoticias a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.cajaOtrasNoticias a img{
+    max-width: 400px;
+    max-height: 300px;
+    overflow: hidden;
+}
+#titularesOtrasNoticias{
+    font-size: 0.8vw;
+    font-family: var(--fuente-2);
+    padding: 0.2rem;
+}
+/*fin noticia en detalle*/
 /*HEADER*/
 #cajaHeader{
     background-color: var(--color-azul);
@@ -52,30 +130,43 @@
     cursor: pointer;
 }
 
-.btn:hover, #btnEditar:hover{
+.btn:hover{
     background-color: var(--color-gris);
+}
+#btnEditar:hover{
+    background-color: var(--color-azul);
+    border: var(--color-blanco) solid 2px;
+}
+#btnEditar a:hover{
+    color: var(--color-blanco);
 }
 
 #cajaEditar{
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 #btnEditar{
-    height: 1.5rem;
+    /* height: 1.5rem;
     width: 5rem;
     cursor: pointer;
     border-radius: 1.2rem;
-    border: 0.1rem solid var(--color-gris);
+    border: 0.1rem solid var(--color-gris); */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border:#0a1a2a solid 2px;
+    color:var(--color-blanco);
+    background-color: var(--color-blanco);
 }
 #cajaBusqueda{
-    width: 30%;
-    display: flex;
+    width: 25%;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 #busqueda{
+    max-width: 10vw;
     height: 1.5rem;
     border-radius: 1.2rem;
     border: 0.1rem solid var(--color-gris);
@@ -99,8 +190,8 @@
 /*Main*/
 
 .slider{
-    width: 900px;
-    height: 400px;
+    max-width: 900px;
+    max-height: 400px;
     overflow: hidden;
     cursor: pointer;
     margin: auto;
@@ -117,6 +208,7 @@
   .slider li{
       width: 100%;
       list-style: none;
+      margin:1rem;
   }
   .slider img{
       width: 100%;
@@ -124,7 +216,7 @@
   }
 
   .cajaSlider{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
   }
 
@@ -345,6 +437,10 @@ label{
     color: var(--color-blanco);
     border: var(--color-gris-claro);
     cursor: pointer;
+    font-family: var(--fuente-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btnCrud:hover{
     background-color: #0e3052;
@@ -352,12 +448,20 @@ label{
 
 .lineaCrud{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     background-color: var(--color-blanco);
     border-bottom: black solid 0.1rem;
     margin-left: 4rem;
     margin-right: 4rem;
 }
+#titulosCrud{
+    display: flex;
+    font-family: var(--fuente-2);
+    font-size: 1.5vw;
+    margin-right: 2rem;
+    justify-content: start;
+}
+
 .inputsCrud{
     display: flex;
     /* width: 100%;
@@ -370,7 +474,6 @@ label{
 .inputsCrud input[type="file"] {
     color: transparent;
 }
-
 
 #cuerpoCrud input{
     padding: 1rem;
@@ -459,25 +562,11 @@ seccion-fecha{
      justify-content: center;
      overflow: hidden;
      padding: 2%;
- 
- }
- 
- .cajaN{
-     text-align: center;
-     font-family: var(--fuente-2);
-     font-size: 15px;
-     background-color: var(--color-gris-claro);
-     margin: 2px;
-     overflow: hidden;
-     border-radius: 3%;
-     max-width: 300px;
-     min-height: 100px;
-     word-wrap: break-word;
-    
+    flex-wrap: wrap;
  }
  
  .foto {
-     
+     max-width: 50%;
      height: 150px;
      margin: 10px;
      overflow: hidden;
@@ -487,16 +576,19 @@ seccion-fecha{
 /*Media query de tamaño celular*/
 @media only screen and (min-width:0px) and (max-width:480px) {
     #cajaEditar{
-        display: none;
+        width: unset;
     }
     #cajaBusqueda{
         display: none;
     }
     #cajaHeader{
-        justify-content: center;
+        justify-content: space-around;
     }
-    .slider{
+    .titleSlider{
         display: none;
+    }
+    #logo{
+        margin-left: 33vw;
     }
     #botonCheck{
         display: block;
@@ -584,13 +676,13 @@ seccion-fecha{
     .formStyles input{
         width: 100%;
     }
+    #tituloCrud{
+        font-size: 2.5vw;
+    }
 }
 
 /*Media query de tamaño celular*/
 @media only screen and (min-width:481px) and (max-width:900px){
-    .slider{
-        display: none;
-    }
     #cotizacion :nth-child(-n+6){
         font-size: small;
         display: none;
