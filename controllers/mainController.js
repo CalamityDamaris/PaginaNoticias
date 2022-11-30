@@ -45,4 +45,7 @@ module.exports = {
     await News.findOneAndDelete({url: req.params.titulo }).exec()
     res.redirect('/crud')
   },
+  doc: (req,res) => {
+    res.render("doc")
+  }
 };

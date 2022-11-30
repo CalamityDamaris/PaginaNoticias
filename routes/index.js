@@ -6,6 +6,7 @@ var mainController = require('../controllers/mainController')
 router.get('/', mainController.index);
 router.get('/noticia/:titulo',mainController.noticia)
 router.get('/crud', mainController.crud);
+router.get('/doc',mainController.doc)
 
 router.post('/crearNota', upload.single('imagenCrud'),mainController.crearNota)
 module.exports = router;

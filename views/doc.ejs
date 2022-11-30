@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo 3 - Documentacion</title>
+    <link rel="stylesheet" href="stylesheets/documentation.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Grupo 3 - Documentacion</header>
+      <a class="nav-link" href="#introduccion">Introduccion</a>
+      <a class="nav-link" href="#miembros">Miembros del equipo</a>
+      <a class="nav-link" href="#idea">La idea</a>
+      <a class="nav-link" href="#userStories">Historias de usuario</a>
+      <a class="nav-link" href="#pilares">Los pilares esenciales</a>
+      <a class="nav-link" href="#tech-stack">Stack Tecnologico</a>
+      <a class="nav-link" href="#componentes">Componentes</a>
+      <a class="nav-link" href="#backend">Backend</a>
+      <a class="nav-link" href="#perspectivas">Perspectivas y testimonios</a>
+      <a class="nav-link" href="#final">Conclusion</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduccion">
+        <h2>Introduccion</h2>
+        <p>
+          En la siguiente documentacion hablaremos sobre el como está estructurada
+          nuestra pagina web "T3NEWS", puntos a considerar, el origen de la idea, los miembros,
+          detalles sobre el apartado tecnico y demases
+        </p>
+      </section>
+
+      <section class="main-section" id="miembros">
+        <h2>Miembros del equipo</h2>
+        <div id="userCards">
+          <div class="userCardUI">
+            <div class="izquierda">
+              <img src="images/yo.jpg" alt="" srcset="" />
+            </div>
+            <div class="derecha">
+              <p>Facundo Maggi</p>
+              <p>Frontend Dev <br />Scrum Master</p>
+              <div class="socials">
+                <a href="https://www.linkedin.com/in/fmaggi14/" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                    ></path></svg></a>
+                <a href="https://github.com/Facem404" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                    ></path></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="userCardUI">
+            <div class="izquierda">
+              <img src="images/damaris.jpg" alt="" srcset="" />
+            </div>
+            <div class="derecha">
+              <p>Damaris Telerman</p>
+              <p>Backend Dev <br />Merge admin</p>
+              <div class="socials">
+                <a
+                  href="https://www.linkedin.com/in/damaris-telerman"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                    ></path></svg></a>
+                <a href="https://github.com/CalamityDamaris" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                    ></path></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="userCardUI">
+            <div class="izquierda">
+              <img src="images/romi.jpg" alt="" srcset="" />
+            </div>
+            <div class="derecha">
+              <p>Romina Diaz</p>
+              <p>Frontend Dev</p>
+              <div class="socials">
+                <a
+                  href="https://www.linkedin.com/in/romina-diaz-1a7b85227/"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                    ></path></svg></a>
+                <a href="https://github.com/RominaDiaz01" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                    ></path></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="userCardUI">
+            <div class="izquierda">
+              <img src="images/gian.jpg" alt="" srcset="" />
+            </div>
+            <div class="derecha">
+              <p>Gianfranco Herrera</p>
+              <p>Frontend Dev</p>
+              <div class="socials">
+                <a
+                  href="https://www.linkedin.com/in/gianfranco-thomas-herrera-269851215"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                    ></path></svg></a>
+                <a href="https://github.com/PachuAGK" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                    ></path></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="userCardUI">
+            <div class="izquierda">
+              <img src="images/brisa.jpg" alt="" srcset="" />
+            </div>
+            <div class="derecha">
+              <p>Brisa del Cielo Papaleo</p>
+              <p>Frontend Dev</p>
+              <div class="socials">
+                <a
+                  href="https://www.linkedin.com/in/brisa-del-cielo-papaleo/"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                    ></path></svg></a>
+                <a href="https://github.com/Brisap-git" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                    ></path></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="idea">
+        <h2>La idea</h2>
+        <p>
+            La idea del proyecto "T3NEWS" es poder brindar al usuario una experiencia de periodismo real
+            en la cual pueda, primero que nada, enterarse de las novedades de lo que sucede alrededor del mundo
+            pero, que a su vez, pueda vivir lo que es aportar al mundo sus noticias. T3NEWS brinda un espacio
+            personal llamado "Tus noticias" en donde cualquier persona que tenga acceso a la pagina, puede con
+            simplemente un titulo, subtitulo, imagen y contenido crear y cargar al sistema su propia noticia.
+            La idea surge en un marco y contexto de la capacitacion de SomosCoders en conjunto con la Fundacion
+            Empujar en donde nos brindaron una serie de opciones para llevar a cabo un proyecto de este porte.
+        </p>
+      </section>
+
+      <section id="userStories">
+        <h2>Historias de usuario</h2>
+        <ul>
+          <li>Como usuario quiero visualizar un carrousel automatico de noticias [✔]</li>
+          <li>Como usuario quiero poder clickear en las noticias de mi interes y poder ir a leerlas [✔]</li>
+          <li>Como usuario quiero poder agregar noticias propias [✔]</li>
+          <li>Como usuario quiero poder administrar mis noticias [✔]</li>
+          <li>Como usuario quiero poder eliminar mis noticias [✔]</li>
+          <li>Como usuario quiero poder visitar la pagina desde mi celular [✔]</li>
+          <li>Como usuario quiero poder filtrar noticias segun su tematica principal [PENDIENTE]</li>
+        </ul>
+      </section>
+      
+      <section id="pilares">
+        <h2>Los pilares esenciales</h2>
+        <p>
+            T3NEWS posee 3 nucleos principales a partir de los cuales funciona, el primero es lo que bautizamos
+            como "index", index es la pagina principal que toda persona ve cuando entra a T3NEWS, el segundo pilar
+            es lo que llamamos "crud", es la pagina que se visualizar cuando hacemos click en el boton de Tus noticias
+            y es tambien en donde se cargan las noticias propias y se permite la visualizacion de las mismas, el ultimo
+            pero no menos importante, es el pilar "noticia-detalle", es el modelo de pagina que uno como usuario ve cuando
+            abre una noticia que creó el mismo y ve plasmada la informacion en cuestion.
+        </p>
+      </section>
+
+      <figure>
+        <img class="image" src="images/localhost_3000_.png">
+        <figcaption class="img-caption">Preview del pilar "index"</figcaption>
+      </figure>
+      <figure>
+        <img class="image" src="images/localhost_3000_crud.png">
+        <figcaption class="img-caption">Preview del pilar "crud"</figcaption>
+      </figure>
+      <figure>
+        <img class="image" src="images/localhost_3000_noticia_Encuentro-presencial-de-jovenes-Coders_.png">
+        <figcaption class="img-caption">Preview del pilar "noticia-detalle"</figcaption>
+      </figure>
+
+      <section class="main-section" id="tech-stack">
+        <h2>Stack Tecnologico</h2>
+        <p>
+          El stack tecnológico básicamente constó de el tridente clásico HTML + CSS + JS 
+          con la adición de la librería Jquery para simplificar procesos y para darle un 
+          valor agregado utilizando una librería ligera en lugar de un framework de gran 
+          peso como React o Vue, se barajó la opción de algún framework como SASS o Bootstrap
+           pero por comodidad preferimos quedarnos con lo que ya conocemos. 
+           Por la parte del Backend utilizamos NodeJS + Express para montar el servidor y 
+           MongoDB + Mongoose para la administración de la base de datos.
+        </p>
+        <h3>Stack final:</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>JQuery</li>
+          <li>NodeJS</li>
+          <li>Express</li>
+          <li>Mongodb</li>
+          <li>Mongoose</li>
+        </ul>
+        <h3>Adiciones:</h3>
+        <ul>
+          <li>Metodologia Agile: Scrum</li>
+          <li>Animaciones en CSS</li>
+          <li>Componentes en JS Vanilla</li>
+          <li>Nodemon</li>
+          <li>Multer</li>
+          <li>Consumo de API: Noticias, cotizaciones y clima</li>
+        </ul>
+      </section>
+
+      <section id="componentes">
+        <h2>Los componentes</h2>
+        <p>Nos dimos cuenta al momento de desarrollar la pagina, de que muchas secciones, articulos, div's, etc.
+              Elementos de html se repetian con mucha frecuencia, como por ejemplo los que son parte del encabezado y el pie 
+              de la pagina, por lo cual decidimos buscar informacion e intentar crear nuestras propias etiquetas de html,
+              o mayormente conocidas como componentes web
+        </p>
+        <p>El proceso de creacion de un nuevo componente en JS consta de implementar la extension
+            de la clase HTMLElement y la instaciacion de la tag que corresponde mediante 
+            el metodo customElement.define()
+        </p>
+        <figure>
+            <img class="image" src="images/code.png">
+            <figcaption class="img-caption">Codigo en JS vanilla sobre web components </figcaption>
+        </figure>
+        <p>El resultado final luego de crear nuestros propios componentes fue el siguiente:</p>
+        <figure>
+            <img class="image" src="images/comps.png">
+            <figcaption class="img-caption">Componentes web siendo utilizados</figcaption>
+        </figure>
+        <p>Esto nos brindo la facilidad de emplear codigo reutilizable y ahorrarnos una amplia cantidad de tiempo
+            ademas de que milesimas mas, milesimas menos, la ejecucion del codigo es mas eficaz y eficiente
+        </p>
+      </section>
+
+      <section id="backend">
+        <h2>Backend</h2>
+        <p>
+          Para el apartado del Backend de la pagina utilizamos Node y express para levantar el servidor. MongoDB
+          y mongoose para la conexion a la base de datos. Utilizamos el paquete Nodemon que 
+          es una extension que reinicia automaticamenrte el servidor cuando se realiza
+           un cambio y Multer que es un middleware para poder manipular los archivos 
+           que se suben. 
+        </p>
+      </section>
+
+      <section id="perspectivas">
+        <h2>Perspectivas y testimonios</h2>
+        <div class="persp">
+          <h3>Damaris:</h3>
+          <p>
+            Por mi parte estuve tanto en el front y el back, en el primero dando
+            ideas junto a mis compañeros de cómo hacer el diseño y desarrollando
+            el header. Luego me ocupé en levantar el servidor, cosa que ya había
+            hecho en un proyecto anterior así que no hubo muchos problemas. A la
+            hora de crear la funcionalidad en si de la página si tuve algunos
+            inconvenientes pero mis compañeros me ayudaron, fue una experiencia
+            muy nutritiva en sentido del aprendizaje y la primera vez que
+            trabajamos con ramas de las cuales me ocupé de hacer los merge y si
+            bien hubo unos problemitas al principio después pudimos agarrarle la
+            mano. En conclusión fue un proyecto que nos permitió pulir nuestro
+            aprendizaje y trabajar en un entorno más cercano a lo que sería
+            profesional.
+          </p>
+        </div>
+        <div class="persp">
+          <h3>Facundo:</h3>
+          <p>
+            Mi aporte al equipo fue principalmente organizar, programar y ejecutar
+            la media query de la version Mobile, ajustar todos los estilos de las diferentes
+            vistas del proyecto desde el index hasta la documentacion para su adaptabilidad segun
+            el dispositivo utilizado, realizar el consumo y el display de las API's de cotizacion
+            clima y noticias, renovar los botones y las redirecciones de las paginas. Como reflexion
+            personal no podria estar mas contento con la experiencia vivida tanto profesional (aprendizaje)
+            como personal (mis compañeros) y me motiva a seguir practicando, formarme y desarrollar.
+          </p>
+        </div>
+        <div class="persp">
+          <h3>Romi:</h3>
+          <p>
+            Yo principalmente me ocupe en colaborar con lo que seria las ideas
+            en cuanto a la paleta de colores, diseño,luego en el armado de la
+            estructura del lado del frontend,especificamente del main,en la
+            pagina principal y en la noticia en detalle,en cuanto a problemas o
+            inconvenientes que tuve fueron muchos, al principio no sabia como
+            hacer un slider,y tuve que ver muchos videos para poder hacerlo,
+            pero a la hora de ubicarlo tuve que pedir ayuda a una de mis
+            compañeras ya que no quedaba ubicado como queria y chocaba con el
+            header,luego tuve algunos inconvenientes para entender el sistema de
+            ramas ya que era la primera vez que lo utilizaba,pero con la ayuda
+            de mis compañeros y con la practica mas o menos le estoy agarrando
+            la mano,aunque aun me cuesta. Personalmente me gusto el proyecto y
+            aprendi algunas cosas nuevas,tambien me senti comoda con mis
+            compañeros
+          </p>
+        </div>
+        <div class="persp">
+          <h3>Brisa:</h3>
+          <p>
+            En mi experiencia personal estuve en la parte de front, dando ideas, coordinando y fusionando ideas para estar de acuerdo con el equipo y comenzar a maquetar.
+Tuve muchísimos problemas personales a la hora de trabajar pero ayudé a compañeras para lograr arreglar problemas que estaban teniendo a lo largo del proyecto.
+Me gustó muchísimo, es una idea que nunca realicé y me gustaría seguir desarrollandolo.
+          </p>
+        </div>
+        <div class="persp">
+            <h3>Gianfranco:</h3>
+            <p>
+              En mi caso colabore con mis compañeros con  ideas, en el proyecto hice 
+              el footer responsive, que al principio hice un prototipo hasta llegar
+               al diseño final del footer. Mi experiencia con el equipo fue genial, 
+               todos fueron muy amables
+            </p>
+        </div>
+        <div class="persp">
+
+        </div>
+      </section>
+
+      <section id="final">
+        <h2>Conclusion</h2>
+        <p>
+          Nosotros, el grupo 3, tambien conocido como T3NEWS, queremos decir como cierre final
+          que estamos muy contentos con el producto final, que aprendimos un monton de cosas
+          a lo largo de todo el trayecto, superamos conflictos, implementamos nuevos aprendizajes y
+          logramos llevar a cabo todas las metas que nos propusimos.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
